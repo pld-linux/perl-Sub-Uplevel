@@ -42,7 +42,7 @@ wy¿szej ramce stosu.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 #%%{__make} test
 
