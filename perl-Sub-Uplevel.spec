@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Sub
-%define	pnam	Uplevel
+%define		pdir	Sub
+%define		pnam	Uplevel
 Summary:	Sub::Uplevel - apparently run a function in a higher stack frame
 Summary(pl):	Sub::Uplevel - pozorne uruchomienie funkcji w wy¿szej ramce stosu
 Name:		perl-Sub-Uplevel
