@@ -19,12 +19,12 @@ Summary(sv):	%{pdir}::%{pnam} Perlmodul
 Summary(uk):	Модуль для Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl дё©И
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.06
-Release:	2
+Version:	0.08
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1436ca7aa406c1f8096ca6f56f0c69ed
+# Source0-md5:	ee9f20f8a45f92672a95681446dce9bd
 BuildRequires:	perl-devel >= 5.005
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
