@@ -5,23 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Sub
 %define	pnam	Uplevel
-Summary:	%{pdir}::%{pnam} perl module
-Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
-Summary(da):	Perlmodul %{pdir}::%{pnam}
-Summary(de):	%{pdir}::%{pnam} Perl Modul
-Summary(es):	Módulo de Perl %{pdir}::%{pnam}
-Summary(fr):	Module Perl %{pdir}::%{pnam}
-Summary(it):	Modulo di Perl %{pdir}::%{pnam}
-Summary(ja):	%{pdir}::%{pnam} Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	%{pdir}::%{pnam} ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul %{pdir}::%{pnam}
-Summary(pl):	Modu³ perla %{pdir}::%{pnam}
-Summary(pt_BR):	Módulo Perl %{pdir}::%{pnam}
-Summary(pt):	Módulo de Perl %{pdir}::%{pnam}
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(sv):	%{pdir}::%{pnam} Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
+Summary:	Sub::Uplevel - apparently run a function in a higher stack frame
+Summary(pl):	Sub::Uplevel - pozorne uruchomienie funkcji w wy¿szej ramce stosu
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.08
 Release:	1
@@ -35,11 +20,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Sub::Uplevel - apparently run a function in a higher stack frame.
+Sub::Uplevel Perl module is for apparent running a function in a
+higher stack frame.  Like Tcl's uplevel() function, but not quite so
+dangerous.
 
 %description -l pl
-Modu³ Sub::Uplevel - umo¿liwiaj±cy pozorne uruchomienie funkcji w
-wy¿szej ramce stosu.
+Modu³ Perla Sub::Uplevel umo¿liwia pozorne uruchomienie funkcji w
+wy¿szej ramce stosu. Dzia³a podobnie do funkcji uplevel() Tcl-a, lecz
+nie jest tak niebezpieczny.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
