@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Sub
 %define	pnam	Uplevel
@@ -21,7 +25,7 @@ Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.08
 Release:	1
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ee9f20f8a45f92672a95681446dce9bd
@@ -31,7 +35,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Sub::Uplevel -- apparently run a function in a higher stack frame.
+Sub::Uplevel - apparently run a function in a higher stack frame.
 
 %description -l pl
 Modu³ Sub::Uplevel - umo¿liwiaj±cy pozorne uruchomienie funkcji w
@@ -44,12 +48,14 @@ wy¿szej ramce stosu.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-#%%{__make} test
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
