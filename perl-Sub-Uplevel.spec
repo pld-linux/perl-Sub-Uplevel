@@ -9,8 +9,9 @@ Summary:	Sub::Uplevel - apparently run a function in a higher stack frame
 Summary(pl):	Sub::Uplevel - pozorne uruchomienie funkcji w wy¿szej ramce stosu
 Name:		perl-Sub-Uplevel
 Version:	0.13
-Release:	1
-License:	unknown
+Release:	2
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	16ea7df857d28cbf50ef668fe19559f7
