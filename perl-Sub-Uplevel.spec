@@ -6,7 +6,7 @@
 %define		pdir	Sub
 %define		pnam	Uplevel
 Summary:	Sub::Uplevel - apparently run a function in a higher stack frame
-Summary(pl):	Sub::Uplevel - pozorne uruchomienie funkcji w wyøszej ramce stosu
+Summary(pl.UTF-8):   Sub::Uplevel - pozorne uruchomienie funkcji w wy≈ºszej ramce stosu
 Name:		perl-Sub-Uplevel
 Version:	0.14
 Release:	1
@@ -27,9 +27,9 @@ Sub::Uplevel Perl module is for apparent running a function in a
 higher stack frame.  Like Tcl's uplevel() function, but not quite so
 dangerous.
 
-%description -l pl
-Modu≥ Perla Sub::Uplevel umoøliwia pozorne uruchomienie funkcji w
-wyøszej ramce stosu. Dzia≥a podobnie do funkcji uplevel() Tcl-a, lecz
+%description -l pl.UTF-8
+Modu≈Ç Perla Sub::Uplevel umo≈ºliwia pozorne uruchomienie funkcji w
+wy≈ºszej ramce stosu. Dzia≈Ça podobnie do funkcji uplevel() Tcl-a, lecz
 nie jest tak niebezpieczny.
 
 %prep
