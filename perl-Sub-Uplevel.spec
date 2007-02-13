@@ -6,7 +6,7 @@
 %define		pdir	Sub
 %define		pnam	Uplevel
 Summary:	Sub::Uplevel - apparently run a function in a higher stack frame
-Summary(pl.UTF-8):   Sub::Uplevel - pozorne uruchomienie funkcji w wyższej ramce stosu
+Summary(pl.UTF-8):	Sub::Uplevel - pozorne uruchomienie funkcji w wyższej ramce stosu
 Name:		perl-Sub-Uplevel
 Version:	0.14
 Release:	1
